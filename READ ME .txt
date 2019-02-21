@@ -1,0 +1,32 @@
+                                                     --- READ ME ---
+
+This read me file contains a small description about each .m file and the order in which they should be run. 
+
+Note: we use matlab version 2018b
+
+1. ML coursework Final.py
+We use python for preprocessing steps which convert the categorical attribute to numeric values.
+
+2. Initial_Analysis_Plots.m 
+ - This file is used to produce the initial analysis using the original full dataset with out any encodings this is used to produce the barplots and histograms used to form the basic statistics. 
+
+3. Initial_Run.m 
+- This file is used to produce the initial accuracy results using Naive Bayes and Random Forests. The data being used is the original full dataset but has been encoded for the models to be built. 
+
+4. splitdata.m 
+- This file is used load the data which has been encoded and some features have been removed in an attempt to increase the accuracy of both models. 
+
+5. NaiveBayes_new.m 
+- This file is used to obtain the Naive Bayes model, which uses the splitdata.m for the dataset. 
+
+6. RandomForest.m 
+- This file is used to create the Random Forest model, which also uses the splitdata.m for the dataset. 
+  
+7. ROC.m 
+- This file is to produce the ROC curve but relies on NaiveBayes_new.m and RandomForest.m to be run first. 
+
+7.Kfold.m 
+- This file is used to produce the 10-fold cross validation plots. 
+
+                                                       --- END ---
+
